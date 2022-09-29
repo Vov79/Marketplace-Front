@@ -1,0 +1,425 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.App {
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+
+
+.Navbar{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  top: 0;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0px;
+  align-items: center;
+  width: 1180px;
+  
+  span{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  
+  .hNavFirst{
+    display: flex;
+    justify-items: center;
+    width: 200px;
+    .catalog{
+      display: flex;
+      align-self: center;
+      gap: 10px;
+      cursor: pointer;
+    }  
+  }
+
+  
+  .hNavSecond{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .likes{
+      display: inherit;
+      align-items: center;
+      flex-direction: row;
+      gap: 3px;
+    }
+
+    .bag{
+      display: inherit;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+    }
+
+    .profile{
+      display: inherit;
+      align-self: center;
+    }
+    
+  }
+}
+
+.Index{
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  
+  .slider{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+  }
+
+  .sliderFirstImage{
+    justify-items: center;
+    width: 100%;
+    height: 90%;
+
+    img{
+      width: 100%;
+      height: 90%;
+    }
+
+  }
+
+  
+  .sliderFirst{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sliderNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #products{
+      display: flex;
+      align-items: center;
+    }
+
+  .sliderNavigation{
+    display: flex;
+    gap: 10px;
+    div{
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      cursor: pointer;
+    }
+  }
+  }
+
+  
+
+  .productNavigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    overflow: auto;
+    gap: 5px;
+    padding: 20px 0;
+    
+    .ProductNav{
+      display: flex;
+      max-width: 140px;
+      max-height: 140px;
+      border: 1px solid #F6F6F6;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .ProductNav:hover{
+      cursor: pointer;
+      box-shadow:  rgba(43, 185, 232, 0.15) 0px 7px 15px;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .lastView{
+    flex-flow: column;
+    margin-top: 100px;
+    
+    #title{
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 38px;
+    }
+
+    .lastViewProducts{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      
+    }
+  }
+
+  
+
+}
+
+.Footer{
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  max-width: 1180px;
+  background-color: white;
+  
+  .footerInfo{
+    display: flex;
+    justify-content: space-between;
+    color: #3D3D3D;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #C4C4C4;
+    
+    .footerInfoMain{
+      pointer-events: none; 
+    }
+
+    .footerInfoBlock{
+      background-color: white;
+    }
+    span{
+      font-family: 'Gilroy', sans-serif;
+      font-size: 18px;
+      line-height: 100%;
+      font-weight: bold;
+      color:#000000;
+    }
+    
+    li{
+      list-style-type: none;
+      margin-top: 20px;
+    }
+
+    .footerInfoIcon{
+      display: none;
+    }
+
+    
+  }
+  .footerSecondPart{
+    margin-top: 50px;
+    display: flex;
+
+  .footerLogoWeb{
+    text-align: left;
+  }
+
+  .footerLogoMobile{
+    display: none;
+  }
+
+  #copyText{
+    position: absolute;
+    left:50%;
+    margin-left:-20px;
+    margin-top: 30px;
+    color: #999999;
+    z-index: 0;
+  }
+}
+ 
+}
+
+.burgerMenu{
+  display: none; 
+  position: fixed;
+  right: 10px;
+}
+
+
+
+.MainMobileMenu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 80px;
+  width: 95%;
+  height: 100vh;
+  padding: 10px;
+  
+  .mainLikes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .likes{
+    display: inherit;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: 80px;
+    width: 95%;
+    
+  }
+  
+  .mainBag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .bag{
+    display: inherit;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: 95%;
+    
+    
+  }
+
+  .mainProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .profile{
+    display: inherit;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: 95%;
+    
+    
+  }
+
+  .mainCatalog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .catalog{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: 95%;
+    
+    
+  } 
+}
+
+
+
+.messageout-enter {
+  opacity: 0.5;
+  transform: translateX(-130%);
+  
+}
+
+/* ending ENTER animation */
+.messageout-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+    transition: all 1.2s ease;
+}
+
+
+.messageout-exit {
+  opacity: 0.9;
+  transform: translateX(-110%);
+}
+
+
+.messageout-exit-active {
+  opacity: 0;
+  transform: translateX(0%);
+    transition:all 1.2s ease;
+}
+
+.menuPrimary-enter {
+ 
+ transform: translateX(110%); 
+}
+
+
+.menuPrimary-enter-active {
+  
+  transform: translateX(0%);
+  transition: all 1000ms ease-in-out;
+}
+
+
+
+ .menuPrimary-exit-active {
+  transform: translateX(110%);
+  transition: all 1000ms ease-in-out;
+}
+
+
+
+
+
+
+
+.List-enter {
+  height: 0px!important;
+  transform: translateY(0%); 
+ }
+ 
+ 
+ .List-enter-active {
+  height: 100px!important;
+   transform: translateY(0%);
+   transition: all 700ms linear;
+ }
+ .List-enter-done {
+  height: 100px!important;
+   transform: translateY(0%);
+   
+ }
+ 
+ .List-exit {
+  height: 100px!important;
+  transform: translateY(0%);
+  
+}
+ 
+ .List-exit-active {
+  height: 0px!important;
+   transform: translateY(0%);
+     transition: all 800ms linear;
+ }
+ 
+@import "Product.scss";
+@import "Responsive.scss";
+@import "Catalog.scss";
+@import "ProductDetails.scss";
+@import "Cart.scss";

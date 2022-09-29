@@ -1,0 +1,99 @@
+
+
+.Cart{
+    width: 32%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    left: 68%;
+    top: 0;
+    padding: 50px 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    flex-flow: column;
+
+    .Cart-Products{
+        height: 500px;
+        overflow-x: auto;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .Cart-Products::-webkit-scrollbar{
+        background-color: #c4bcb783;
+        border-radius: 5px;
+        width: 3px;
+    }
+
+    .Cart-Products::-webkit-scrollbar-thumb{
+        background-color: #e06812;
+        border-radius: 5px;
+        width: 3px;
+    }
+
+    #Cart-Total{
+        position: fixed;
+        top: 700px;
+        display: flex;
+        align-items: center;
+
+        #Cart-TotalSum{
+            font-size: 26px;
+            margin-left: 5px;
+        }
+    }
+
+    .Cart-Header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999999;
+
+        #Cart-HeaderText{
+            font-size: 32px;
+        }
+
+        #closeIcon{
+            cursor: pointer;
+        }
+    }
+
+    .Cart-ProductItem{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        border-bottom: 1px solid #999999;
+        align-items: center;
+        #Cart-Img{
+            width: 250px;
+            gap: 10px;
+            height: 90px;
+            display: flex;
+            #Cart-ProductBody{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        #Cart-ProductCharge{
+            display: flex;
+            align-items: center;
+            width: 100px;
+            justify-content: space-between;
+
+            span{
+                cursor: pointer;
+            }
+        }
+        #Cart-ProductQuantity{
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            align-items: center;
+            padding-bottom: 10px;
+            margin-bottom: -10px;
+            border-bottom: 1px solid #211F20;
+            cursor: pointer;
+        }
+    }
+
+    
+}
